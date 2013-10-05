@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Is it Medium?</title>
+</head>
+<body ng-app>
+  <h1>Is it Medium?</h1>
+
+  <div ng-controller="AppController" ng-init="loadTitle()">
+    <div ng-show="answered">
+      <h1>{{result}}</h1>
+      <button type="button" ng-click="newTitle()">Next</button>
+    </div>
+    <div ng-show="!answered">
+      <h2>{{title.value}}</h2>
+      <button type="button" ng-click="answer(true)">Medium</button>
+      <button type="button" ng-click="answer(false)">Not Medium</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"/>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js"></script>
+  <script src="javascripts/app.js"></script>
+</body>
+</html>
