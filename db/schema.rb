@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20131005184153) do
 
   create_table "titles", force: true do |t|
     t.string  "value"
+    t.string  "link"
     t.boolean "real",  default: false
   end
 
