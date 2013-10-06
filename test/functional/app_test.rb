@@ -1,8 +1,4 @@
-ENV['RACK_ENV'] = 'test'
-require 'minitest/autorun'
-require 'rack/test'
-
-require_relative '../app.rb'
+require 'test_helper'
 
 class AppTest < MiniTest::Unit::TestCase
 

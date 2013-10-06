@@ -8,7 +8,7 @@ function AppController($scope, $http) {
     });
   };
 
-  $scope.answer = function(answer) {
+  $scope.makeGuess = function(answer) {
     $scope.answered = true;
 
     if($scope.title.real == answer) {
